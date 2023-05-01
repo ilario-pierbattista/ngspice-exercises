@@ -1,0 +1,14 @@
+* Title: simple attenuator circuit
+* https://www.youtube.com/watch?v=m621rS1pdwA
+
+* Netlist
+V1 a 0 60V
+R1 a b 20
+R2 b 0 10
+
+* Control commands
+.control
+op
+print all
+print v(a,b)
+.endc

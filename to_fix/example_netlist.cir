@@ -1,0 +1,11 @@
+.title This is an example netlist
+* set spicebehavior=any
+v1 in 0 dc 5 ac 1 PULSE (0 5 1u 1u 1u 1 1)
+r1 in out 2.2K
+c1 out 0 2.2u
+
+.control
+plot v(out)
+.endc
+
+.end

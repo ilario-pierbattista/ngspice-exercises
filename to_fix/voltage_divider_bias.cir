@@ -1,0 +1,15 @@
+voltage divider biasing
+
+vinput 1 0 sin (0 1.5 2000 0 0)
+c1 1 5 100u
+r1 5 2 1k
+r2 4 5 8466
+r3 5 0 1533
+q1 3 2 0 mod1
+rspkr 3 4 8
+v1 4 0 dc 15 
+
+.model mod1 npn
+.tran 0.02m 0.78m
+.plot tran v(1,0) i(v1)
+.end
