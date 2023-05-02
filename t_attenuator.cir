@@ -1,0 +1,15 @@
+* Title: T attenuator
+
+* Netlist
+
+Vi a 0 5V
+R1 a b 100
+R2 b c 100
+R3 b 0 100
+R4 c 0 1K
+
+* Control
+.control
+op
+print all
+.endc
